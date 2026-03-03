@@ -1,0 +1,219 @@
+/* ================= GLOBAL RESET ================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #f5f0ea, #e6e0f8);
+  min-height: 100vh;
+  color: #4a4453;
+}
+
+/* ================= LAYOUT ================= */
+.container {
+  padding: 40px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.container h2 {
+  margin-bottom: 20px;
+  color: #5a4e78;
+}
+
+/* ================= NAVBAR ================= */
+.navbar {
+  background-color: #b9aedc;
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #3f3560;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.nav-links a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #3f3560;
+  font-weight: 500;
+  transition: 0.25s ease;
+}
+
+.nav-links a:hover {
+  color: #6c63a8;
+}
+
+/* ================= FOOTER ================= */
+.footer {
+  background-color: #b9aedc;
+  padding: 20px;
+  text-align: center;
+  color: #3f3560;
+  margin-top: 40px;
+}
+
+.footer-links a {
+  margin: 0 10px;
+  color: #5a4e78;
+  text-decoration: none;
+}
+
+/* ================= CARDS ================= */
+.card {
+  background: #fffdfb;
+  padding: 20px;
+  border-radius: 14px;
+  margin-bottom: 20px;
+  box-shadow: 0 6px 18px rgba(150, 130, 180, 0.15);
+  transition: all 0.25s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 26px rgba(150, 130, 180, 0.25);
+}
+
+/* ================= BUTTONS ================= */
+.primary-btn {
+  padding: 10px 18px;
+  border: none;
+  border-radius: 8px;
+  background-color: #a897d6;
+  color: white;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.25s ease;
+}
+
+.primary-btn:hover {
+  background-color: #8f7cc7;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(120, 100, 180, 0.3);
+}
+
+.primary-btn:active {
+  transform: scale(0.97);
+}
+
+.secondary-btn {
+  padding: 10px 18px;
+  border: none;
+  border-radius: 8px;
+  background-color: #f0e8dc;
+  color: #5a4e78;
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+.secondary-btn:hover {
+  background-color: #e6dbc9;
+}
+
+/* ================= FORMS ================= */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 400px;
+}
+
+input,
+select {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #d8cfee;
+  width: 100%;
+  transition: 0.25s ease;
+}
+
+input:focus,
+select:focus {
+  border-color: #a897d6;
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(168, 151, 214, 0.25);
+}
+
+.form-message {
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+/* ================= ALERTS ================= */
+.alert-box {
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.alert-box.warning {
+  background-color: #fff4d6;
+}
+
+.alert-box.success {
+  background-color: #e6f4ea;
+}
+
+/* ================= TABLES ================= */
+.table-wrapper {
+  overflow-x: auto;
+}
+
+.vaccine-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fffdfb;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.vaccine-table th {
+  background-color: #b9aedc;
+  color: #3f3560;
+  padding: 12px;
+}
+
+.vaccine-table td {
+  padding: 10px;
+  text-align: center;
+}
+
+.vaccine-table tr:nth-child(even) {
+  background-color: #f6f2fa;
+}
+
+.vaccine-table tr:hover {
+  background-color: #ede7f8;
+}
+
+.empty-text {
+  text-align: center;
+  color: #8a7fa3;
+  margin-top: 20px;
+}
+
+/* ================= STATUS COLORS ================= */
+.status.completed {
+  color: #3c8c5a;
+  font-weight: 600;
+}
+
+.status.due {
+  color: #d08a00;
+  font-weight: 600;
+}
+
+.status.missed {
+  color: #c94c4c;
+  font-weight: 600;
+}
